@@ -11,10 +11,11 @@ A full-featured backend system for café management, built using **Spring Boot**
 - 📋 Table Management: Reservation, Availability
 - 🛍️ Product & Category Management
 - 🧾 Order Processing and Item Tracking
-- 📦 Inventory Control
+- 📦 Inventory tracking per café
 - 🧑‍💼 User Approval Workflow (Admin-controlled)
+- 
 - 📊 Real-time logging and exception handling
-- 🌐 RESTful API endpoints with Swagger documentation
+
 
 ---
 
@@ -35,25 +36,8 @@ A full-featured backend system for café management, built using **Spring Boot**
 
 ## 🧱 Project Structure
 
-src/
-├── main/
-│ ├── java/com/cafe/
-│ │ ├── controller/ # REST controllers
-│ │ ├── entity/ # Entity classes
-│ │ ├── repository/ # Spring Data JPA Repos
-│ │ ├── service/ # Interfaces + Implementations
-│ │ ├── security/ # JWT + Custom Auth
-│ │ ├── configuration/ # App configs (ModelMapper, Security)
-│ │ ├── Dto/ # DTOs for APIs
-│ │ └── exception/ # Global + custom exception handlers
-│ └── resources/
-│ ├── application.properties
-│ ├── application-dev.properties
-│ ├── application-prod.properties
-└── test/java/com/cafe/
+![image](https://github.com/user-attachments/assets/996082b1-f6ac-4da1-95ca-928ee3248bcf)
 
-
----
 
 ## 🗃️ Database Schema
 
@@ -94,6 +78,59 @@ cd Cafe-Staff-Panel
 
 # 5. Build and run the application
 ./mvnw spring-boot:run
+
+
+🔐 JWT Authentication
+Login via /api/auth/login
+
+Token will be returned in response
+
+Use Authorization: Bearer <token> in headers for secure endpoints
+
+📧 Email Configuration
+Already setup with Gmail SMTP. Change in application.properties:
+
+spring.mail.username=your-email@gmail.com
+spring.mail.password=your-app-password
+
+
+🛠️ Build & Run with Maven
+# Build
+mvn clean install
+
+# Run
+mvn spring-boot:run
+
+License
+This project is open-source and available under the MIT License.
+
+.
+
+🙋‍♂️ Author
+Satyam Goyal
+Backend Developer | Java & Spring Boot Enthusiast
+GitHub Profile
+
+
+Profile
+
+🎯 Contribution
+Want to contribute? Fork this repo, create a feature branch, and raise a pull request. Let's build better software together!
+
+
+---
+
+### ✅ Next Step for You
+
+1. Copy this content.
+2. Paste it in your project root as a file named `README.md`.
+3. Stage and push:
+
+```bash
+git add README.md
+git commit -m "Added auto-generated README"
+git push
+
 
 
 
