@@ -1,4 +1,4 @@
-# ☕ Cafe Staff Panel - Backend System
+# ☕ CafeDash Staff Panel - Backend System
 
 A full-featured backend system for café management, built using **Spring Boot**, **MySQL**, and **Spring Security (JWT)**. This system supports multi-role user management, inventory, orders, products, tables, and real-time café operations.
 
